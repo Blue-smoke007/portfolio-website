@@ -1,0 +1,203 @@
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #fff; /* Light mode background color */
+    background-image: url('light-mode-bg.jpg'); /* Default light mode background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 50px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+    background-image: url('dark-mode-bg.jpg'); /* Dark mode background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150vh;
+    padding: 0 30px;
+    text-align: center;
+}
+
+header {
+    flex: 2;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.intro-text h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px ;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    position: relative;
+    bottom: 250px;
+    left: 240px;
+    width: -60px;
+    border: 2px transparent rgba(0, 0, 0, 0.466);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 3s;
+}
+
+.buttons .btn:hover {
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    padding-top: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 30px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    left: 80px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px;
+    position: relative;
+    bottom: 550px;
+}
+
+.sidebar ul li a:hover {
+    color: rgba(129, 122, 230, 0.966);
+    text-decoration: none;
+    padding: 50px;
+}
+
+.contact-info {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.note {
+    background-color: rgba(0, 0, 0, 0.192);
+    text-align: center;
+    color: #f7ca58;
+    position: fixed;
+    width: 120%;
+    bottom: 10px;
+}
+
+.profile-img {
+    position: relative;
+    margin: 20px;
+    top: -270px;
+    right: 60px;
+    width: 205px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #333; /* Add a border */
+    border-radius: 100px; /* Rounded corners */
+    transition: transform 1s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+    filter: brightness(100%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.profile-img:hover {
+    transform: scale(0.8);
+}
+
+.vertical-line {
+    width: 2px; /* Thickness of the line */
+    height: 450px; /* Length of the line */
+    background-color: black; /* Color of the line */
+    position: relative; /* Or relative, depending on your layout */
+    left: 55%; /* Position it to the center or any place you want */
+    background: linear-gradient(to bottom, #0a3feec7, #e00b0ba8); /* Gradient color */
+    border-radius: 5px; /* Rounded edges for a softer look */
+    box-shadow: 0 0 20px #a1b306b2; /* Glowing effect */
+    animation: glow 5s infinite alternate; /* Infinite glow animation */
+    bottom: 90px;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: #000;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight:lighter;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Additional styling for light mode */
+body:not(.dark-mode) .custom-alert {
+    background-color: #fff; /* Light mode alert box */
+    color: #000; /* Text color */
+}
+
+/* Dark mode specific alert box styles */
+body.dark-mode .custom-alert {
+    background-color: #333; /* Dark mode alert box */
+    color: #fff; /* Light text on dark background */
+}
+
+
+.logo {
+    position: relative;
+    right: 10p;
+}

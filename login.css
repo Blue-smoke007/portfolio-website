@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+.sign-up-form{
+    width: 643px;
+    height: 850;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background:  #c4c1c1;
+    padding: 20px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+.sign-up-form{
+    color: white;
+    margin-bottom: 30px;
+}
+.input-box{
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 2px solid #9c9c9c22;
+    outline: none;
+}
+button{
+    color: white;
+    background-color: #c4c1c1 ;
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+.sign-up{
+    background-color: #c4c1c1;
+    color: black;
+}
+.sign-up:hover{
+    animation-duration: 2s;
+    color: white;
+    background-color: #03004f;
+}
+a{
+    text-decoration: none;
+
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+    color: black;
+}
+.or{
+    background-color:  #c4c1c1;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+.line1{
+    width: 100%;
+}
+#email:hover{
+    animation-duration: 2s;
+    color: black;
+    background-color: #00eaab;
+}
+#email{
+    border-radius: 60px;
+}
+.Sign-in:hover{
+    animation-duration: 2s;
+    background-color: #122366;
+    color: black;
+}
+.Sign-in{
+    color: #03004f;
+}
+.fa-brands{
+    position: relative;
+    right: 135px;
+    color: white;
+
+}
+.fa {
+    position: relative;
+    top: 60px;
+    right: 600px;
+    color: #c4c1c1;
+}
+.loginButton:hover{
+    animation-duration: 2s;
+    background-color: #0a2283;
+    color: white;
+}
